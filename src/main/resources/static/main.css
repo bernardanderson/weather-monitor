@@ -1,0 +1,21 @@
+#main-menu {
+    padding-left: 15px;
+    margin-bottom: 45px;
+}
+
+#current-time {
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.larger {
+    font-size: 1.25em;
+}
+
+.row {
+    margin-bottom: 25px;
+}
+
+#sub-info-rain {
+    display: none;
+}

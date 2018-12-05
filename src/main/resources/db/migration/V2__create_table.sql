@@ -1,0 +1,21 @@
+CREATE TABLE weatherdata (
+id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+timestamp TIMESTAMP,
+outtemp DOUBLE,
+outhumidity SMALLINT,
+outdewpoint SMALLINT,
+heatindex SMALLINT,
+windchill SMALLINT,
+barpress DOUBLE,
+rainfall DOUBLE,
+windspeed DOUBLE,
+windspeedave DOUBLE,
+windspeedpeak DOUBLE,
+winddirection INT,
+intemp DOUBLE,
+inhumidity SMALLINT,
+indewpoint SMALLINT,
+_sha1 CHAR(40),
+_createddate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+_active BIT DEFAULT 1
+)

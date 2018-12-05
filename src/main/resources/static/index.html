@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-screen">
+        <div id="main-menu" class="ui secondary pointing menu">
+          <a id="current-weather" class="active item">
+            Current Weather
+          </a>
+          <a id="hist-rain" class="item">
+            Historical Rainfall
+          </a>
+          <a id="hist-temp" class="item">
+            Historical Temperature
+          </a>
+          <div class="right menu">
+            <a class="ui item">
+              Exit
+            </a>
+          </div>
+        </div>
+        
+        <div id="data-body">
+        <div class="ui one column grid container">
+                <div class="center aligned column">
+                    <h1 id="current-time"></h1>
+                    <p class="larger"><strong>Data Last Updated: <span id="last-updated"></span></strong></p>
+                </div>
+        </div>
+            <div class="ui two column grid container">
+                <div class="center aligned column">
+                <h1 class="ui horizontal divider header">Outdoor</h1>
+                    <div class="row">
+                    <div id="out-temp" class="ui huge statistic">
+                        <div class="label">
+                            Temperature
+                        </div>
+                        <div class="value">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div id="out-windchill" class="ui large statistic">
+                            <div class="label">
+                                Windchill / Heat Index / Dewpoint
+                            </div>
+                            <div class="value">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="out-humidity" class="ui large statistic">
+                            <div class="label">
+                                Humidity
+                            </div>
+                            <div class="value">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="center aligned column">
+                <h1 class="ui horizontal divider header">Indoor</h1>
+                    <div class="row">
+                        <div id="in-temp" class="ui huge statistic">
+                            <div class="label">
+                                Temperature
+                            </div>
+                            <div class="value">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="in-dewpoint" class="ui large statistic">
+                            <div class="label">
+                                Dewpoint
+                            </div>
+                            <div class="value">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="in-humidity" class="ui large statistic">
+                            <div class="label">
+                                Humidity
+                            </div>
+                            <div class="value">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="ui one center aligned column grid container">
+        <div id="sub-info-wind" class="row">
+            <h1 class="ui horizontal divider header">Wind Information and Pressure</h1>
+                <div class="five wide column">
+                    <div id="wind-direction" class="ui large statistic">
+                        <div class="label">
+                            Wind Direction
+                        </div>
+                        <div class="value">
+                        </div>
+                    </div>
+                </div>
+                <div class="five wide column">
+                    <div id="wind-speed" class="ui large statistic">
+                        <div class="label">
+                            Wind Speed (in mph)
+                        </div>
+                        <div class="value">
+                        </div>
+                    </div>
+                </div>
+                <div class="five wide column">
+                    <div id="bar-pressure" class="ui large statistic">
+                        <div class="label">
+                            Barometric Pressure (in mmHG)
+                        </div>
+                        <div class="value">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="sub-info-rain" class="row">
+                <h1 class="ui horizontal divider header">Rainfall Statistics</h1>
+                    <div class="five wide column">
+                        <div id="rain-today" class="ui large statistic">
+                            <div class="label">
+                                Today's Rainfall
+                            </div>
+                            <div class="value">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="five wide column">
+                        <div id="rain-month" class="ui large statistic">
+                            <div class="label">
+                                Monthly Rainfall
+                            </div>
+                            <div class="value">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="five wide column">
+                        <div id="rain-ytd" class="ui large statistic">
+                            <div class="label">
+                                Yearly Rainfall
+                            </div>
+                            <div class="value">
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>

@@ -1,0 +1,42 @@
+# Maven
+.mvn/
+
+# IntelliJ
+.idea/
+.idea_modules/
+/out/
+*.iml
+
+# Mobile tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files
+*target*
+*.jar
+*.war
+*.ear
+*.class
+*.iws
+
+# Eclipse
+.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nip
+local.properties
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+
+# Virtual machine crash logs
+hs_err_pid*
+
+/.factorypath
